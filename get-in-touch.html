@@ -198,7 +198,66 @@
 				
 			<!-- contact area END -->
 		</div>
+
 		<!-- Content END-->
+		<section class="py-5">
+			<div class="container">
+				<div class="row  align-items-center ">
+				  <div class="col-12">
+					 <h3 dir="rtl">با ما در ارتباط باشید</h3>
+				
+					 <div class="response-output "></div>
+					 <form id="contact_form" class="form-validate" novalidate="novalidate" method="POST">
+						<div class="contact-form">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<div class="form-group error-placement-parent"> 
+										<label for="contact_name">نام و نام خانوادگی</label>
+										<input type="text" name="contact_name" ng-model="contact.name" id="contact_name" class="form-control text " placeholder="نام و نام خانوادگی خود را وارد نمایید" required> 
+									</div>
+								</div>
+								<div class="col-12 col-md-6">
+									<div class="form-group error-placement-parent"> 
+										<label for="contact_mobile">شماره تماس</label>
+										<input type="tel" name="contact_mobile" ng-model="contact.mobile" id="contact_mobile" class="form-control text " placeholder="شماره تماس خود را وارد نمایید" required> 
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<div class="form-group error-placement-parent"> 
+										<label for="contact_email">آدرس ایمیل</label>
+										<input type="email" name="contact_email" ng-model="contact.email" id="contact_email" class="form-control text " placeholder="آدرس ایمیل خود را وارد نمایید" required> 
+									</div>
+								</div>
+								<div class="col-12 col-md-6">
+									<div class="form-group error-placement-parent"> 
+										<label for="contact_subject">عنوان پیام</label>
+										<input type="text" name="contact_subject" ng-model="contact.subject" id="contact_subject" class="form-control text " placeholder="عنوان پیام را وارد نمایید" required> 
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group error-placement-parent"> 
+										<label for="contact_text">متن پیام</label>
+										<textarea name="contact_text" ng-model="contact.text" id="contact_text" cols="40" rows="10" class="form-control textarea " placeholder="متن پیام خود را در این قسمت وارد نمایید" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<button id="submit-4" name="submit" type="submit" class="blue-btn button">ارسال پیام</button>
+									<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+								</div>
+							</div>
+						</div>
+					 </form>
+				  </div>
+			  </div>
+		   </div>
+		</section>
+	</div>
 		<!-- Footer ==== -->
 		<footer class="footer-style2">
 			<div class="footer-top bt0">
